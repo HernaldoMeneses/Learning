@@ -13,24 +13,24 @@
 
 ########### - Armazenamento.
 ###
-## -- Filtros em DataFrames
+## -- Filtros em DataFrames - modify
 workdir <- "C:/DedaticaTec"
 dataframe_name.ext <- "Datafram.csv"
 
 setwd(workdir)
 df <- read.csv(dataframe_name.ext)
 
-#df[lina,coluna]
-df[1]
-df[1,]
-df[1:6]
-df[-4]
+df <- df[c(-3,-4,-5,-6)]
 
 df[1,1]
-df[1,1:6]
-df[1,-4]
-df[1:3,1:6]
-df[c(-3,-4,-5,-6)]
+#Lembrando o caracter especial da linguagem $ que referencia, neste caso, as colunas pretendidas.
+df$DIA_SEM[1]
+df$AUTO[2:4]
+#Selecao com criterio, encontrar 1 na coluna ups
+df[df$UPS == 1,]
+
+#Viwers
+view(df)
 
 
 
