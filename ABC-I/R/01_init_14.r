@@ -20,7 +20,7 @@ dataframe_name.ext <- "Datafram.csv"
 setwd(workdir)
 df <- read.csv(dataframe_name.ext)
 
-df <- df[c(-3,-4,-5,-6)]
+df <- df[c(-3,-4,-5,-6)] #Slace
 
 df[1,1]
 #Lembrando o caracter especial da linguagem $ que referencia, neste caso, as colunas pretendidas.
