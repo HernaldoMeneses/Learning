@@ -11,9 +11,9 @@
 # - Infrastrutura de compilação e informações ao final do Script.
 #--------------------------------------------------------------------Thanks.
 
-########### - Armazenamento.
+########### - Filtros.
 ###
-## -- Filtros em DataFrames
+## -- Filtros em DataFrames (slace)
 workdir <- "C:/DedaticaTec"
 dataframe_name.ext <- "Datafram.csv"
 
@@ -24,12 +24,12 @@ df <- read.csv(dataframe_name.ext)
 df[1]
 df[1,]
 df[1:6]
-df[-4]
+df[-4] # não traz a 4 linha
 
 df[1,1]
 df[1,1:6]
 df[1,-4]
-df[1:3,1:6]
+df[1:3,1:6] #Linhas de 1-3 e coluns de 1-6
 df[c(-3,-4,-5,-6)]
 
 

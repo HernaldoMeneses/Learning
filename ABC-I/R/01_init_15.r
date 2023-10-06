@@ -11,30 +11,37 @@
 # - Infrastrutura de compilação e informações ao final do Script.
 #--------------------------------------------------------------------Thanks.
 
-########### - Filtros.
+########### - Fluxo control
 ###
-## -- variáveis
-vogais <- c("a","e","i","o","u")
+## -- if, for, while
 
-vogais[3]
-vogais[-3]
-vogais[3:5]
+# if TRUE do
+if (5==5) "iqual"
+if (5!=5) "not iqual"
+if (5!=5) "empyt"
+if (5==5) 1+1
+# GoodCood
+if (5==5) {
+    "igual"
+    }
+# Try
+if (5==5) {
+    "igual"
+    if (6==6) {
+        "igual too"
+        }
+    
+    }
+# Supouse
+ages <- c(25,30)
+names <- c("Jo","Nho")
+df <- data.frame(names,ages)
 
-length(vogais)
-vogais[3:length(vogais)]
-vogais[length(vogais)-2:length(vogais)]
-
-a <- 3
-b <- 5
-vogais[a:b]
-
-vogais=="e"
-vogais[vogais=="e"]
-vogais[vogais!="e"]
-
-a <- c(1,2,3,4,5)
-a[a>2]
-a[a>=2]
+if (df$ages[df$names=="Nho"] > df$ages[df$names=="Jo"]) {
+    "Nho ++**++     &&&     Jo --**--"    
+} else {
+    "Nho --**--     &&&     Jo ++**++"    
+}
 
 ##
 ###

@@ -11,30 +11,16 @@
 # - Infrastrutura de compilação e informações ao final do Script.
 #--------------------------------------------------------------------Thanks.
 
-########### - Filtros.
+########### - Armazenamento.
 ###
-## -- variáveis
-vogais <- c("a","e","i","o","u")
+## -- DataFrames - Manipulacao
+path <- "C:/"
+file <- "filename.csv"
 
-vogais[3]
-vogais[-3]
-vogais[3:5]
+setwd(path)
+df <- read.csv(file)
 
-length(vogais)
-vogais[3:length(vogais)]
-vogais[length(vogais)-2:length(vogais)]
 
-a <- 3
-b <- 5
-vogais[a:b]
-
-vogais=="e"
-vogais[vogais=="e"]
-vogais[vogais!="e"]
-
-a <- c(1,2,3,4,5)
-a[a>2]
-a[a>=2]
 
 ##
 ###
