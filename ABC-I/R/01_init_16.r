@@ -15,36 +15,27 @@
 ###
 ## -- if, for, while
 
-# if TRUE do
-if (5==5) "iqual"
-if (5!=5) "not iqual"
-if (5!=5) "empyt"
-if (5==5) 1+1
-# GoodCood
-if (5==5) {
-    "igual"
-    }
-# Try
-if (5==5) {
-    "igual"
-    if (6==6) {
-        "igual too"
-        }
-    
-    }
-# Supouse
-ages <- c(25,30)
-names <- c("Jo","Nho")
-df <- data.frame(names,ages)
+# For
+idades <- c(25,30,24,29,31,12)
+nomes <- c("Joao","caina","Maria","Leo","Lia","Enzo")
+df <- data.frame(nomes,idades)
 
-true_value = "True"
-false_value = "False"
-
-if (df$ages[df$names=="Nho"] > df$ages[df$names=="Jo"]) {
-    true_value  
-} else {
-    false_value      
+# para cada posição faça isso
+for (i in idades) {
+    print(i)
 }
+
+for (i in df$idades) {
+    print(i)
+}
+
+v <- 0
+for (i in df$idades) {
+    if (i > v) {
+        v <- i
+    }
+}
+df$nome[df$idades == v] #to show de must age
 
 ##
 ###

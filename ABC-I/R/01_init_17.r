@@ -15,36 +15,58 @@
 ###
 ## -- if, for, while
 
-# if TRUE do
-if (5==5) "iqual"
-if (5!=5) "not iqual"
-if (5!=5) "empyt"
-if (5==5) 1+1
-# GoodCood
-if (5==5) {
-    "igual"
-    }
-# Try
-if (5==5) {
-    "igual"
-    if (6==6) {
-        "igual too"
-        }
-    
-    }
-# Supouse
-ages <- c(25,30)
-names <- c("Jo","Nho")
-df <- data.frame(names,ages)
-
-true_value = "True"
-false_value = "False"
-
-if (df$ages[df$names=="Nho"] > df$ages[df$names=="Jo"]) {
-    true_value  
-} else {
-    false_value      
+# while
+x <- 0
+while (x < 10 ) {
+    print(x)
+    x <- x+1
 }
+
+x <- 0
+cont <- 0
+idades100 <- 0
+
+while (x < 100){
+    cont <- cont+1
+    idades100[cont] <- idades[cont]
+    x <- x+idades[cont]
+}
+
+idades
+idades100
+sum(idades100)
+
+###
+x <- 0
+cont <- 0
+idades100 <- 0
+
+while (x < 100){
+    cont <- cont+1
+    idades100[cont] <- idades[cont]
+    x <- x+idades[cont]
+    y <- x+idades[cont+1]
+}
+
+idades
+idades100
+sum(idades100)
+
+###
+x <- 0
+cont <- 0
+idades100 <- 0
+
+while (y < 100){
+    cont <- cont+1
+    idades100[cont] <- idades[cont]
+    x <- x+idades[cont]
+    y <- x+idades[cont+1]
+}
+
+idades
+idades100
+sum(idades100)
 
 ##
 ###
