@@ -24,7 +24,7 @@ df <- df[c(-3,-4,-5,-6)] #Slace
 
 df[1,1]
 #Lembrando o caracter especial da linguagem $ que referencia, neste caso, as colunas pretendidas.
-df$DIA_SEM[1]
+df$DIA_SEM[1] 
 df$AUTO[2:4]
 #Selecao com criterio, encontrar 1 na coluna ups
 df[df$UPS == 1,]
