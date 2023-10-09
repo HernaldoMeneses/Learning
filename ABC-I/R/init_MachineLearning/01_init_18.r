@@ -37,6 +37,20 @@ soma <- function (y) {
 soma(a)
 soma(b)
 
+
+soma2 <- function (y,z) {
+    x <- 0
+    c <- 0
+    for (i in y) {
+        c <- c+1
+        x <- x[c] + i
+        print(x)
+    }
+}
+
+soma2(a)
+soma2(b)
+
 ##
 ###
 ########### --------------------------------------------------------------------Reloaded.
