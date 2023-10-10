@@ -11,45 +11,62 @@
 # - Infrastrutura de compilação e informações ao final do Script.
 #--------------------------------------------------------------------Thanks.
 
-########### - Fluxo control
+########### - Machine Learning
 ###
-## -- Funçoes
+## -- Tratamento do dataset
+path <- "C:\\Users\\herna\\OneDrive\\Github\\Learning\\ABC-I\\R\\csv"
+file <- "fipe_Jun2018.csv"
 
-#somar os valores do vetor
-a <- c(423,464,69,519,123,258)
+setwd(path)
+df <- read.csv(file)
 
-x <- 0
-for (i in a) {
-    x <- x + i
-}
-print(x)
+#Knowing data
+View(df)
+str(df)
 
-b <- c(51,36,123,98,23,37,63,3)
-
-soma <- function (y) {
-    x <- 0
-    for (i in y) {
-        x <- x + i
-    }
-    print(x)
+seedf <- function (dataf) {
+  View(dataf)
+  str(dataf)
 }
 
-soma(a)
-soma(b)
+#Tratamento
+#exclusão de colunas
+df$X <- NULL
+df$price_reference <- NULL
+seedf(df)
 
+#renomear campos
+?names
+names(df)
+names(df) <- c("Marca", "Carro", "Ano_Modelo", "Combustivel", "Preço")
+names(df)
+seedf(df)
 
-soma2 <- function (y,z) {
-    x <- 0
-    c <- 0
-    for (i in y) {
-        c <- c+1
-        x <- x[c] + i
-        print(x)
-    }
-}
+?summary
+summary(df$Ano_Modelo)
+df$Ano_Modelo[df$Ano_Modelo==320000] <- "Zero Km"
+df$Ano_Modelo <- as.factor(df$Ano_Modelo)
+summary(df$Ano_Modelo)
 
-soma2(a)
-soma2(b)
+summary(df$Ano_Modelo)
+str(df$Ano_Modelo)
+
+summary(df$Preço)
+df$Preço1 <- as.numeric(df$Preço)
+summary(df$Preço1)
+df$Preço1 <- NULL
+
+?gsub
+df$Preço1 <- gsub("R\\$|\\.| ", "",df$Preço)
+df$Preço1 <- NULL
+df$Preço <- gsub("R\\$|\\.| ", "",df$Preço)
+
+summary(df$Preço)
+df$Preço <- as.numeric(gsub("\\.",".",df$Preço))
+summary(df$Preço)
+
+str(df$Preço)
+
 
 ##
 ###
