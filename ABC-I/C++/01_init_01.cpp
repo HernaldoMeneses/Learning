@@ -13,10 +13,11 @@
 //########### --------------------------------------------------------------------Thanks.
 
 //########### - Parte I - inclusao das bibliotecas.
-#include <stdio.h>
+#include <iostream>
+    using namespace std;
 
 //#main function
-int main() {
+int main(){
 	printf("Hello.\n");
     printf("Hello.");
     printf("Hello.\n");
