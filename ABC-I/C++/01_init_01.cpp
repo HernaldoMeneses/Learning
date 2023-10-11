@@ -20,7 +20,10 @@
 int main(){
 	printf("Hello.\n");
     printf("Hello.");
-    printf("Hello.\n");
+    cout << "Hello.\n";
+    
+    //mandando comando para o sistema.
+    system("pause");
 
     return 0;
 }
