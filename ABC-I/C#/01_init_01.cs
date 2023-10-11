@@ -16,7 +16,7 @@
 using System;
 
 //Class Main
-class main{
+class Main{
     static void Main(){
         Console.Write("Hello..");
     }
