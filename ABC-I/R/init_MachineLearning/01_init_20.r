@@ -22,53 +22,22 @@ df <- read.csv(file)
 df <- read.csv(file,header=TRUE,encoding="UTF-8")
 #base de Dados
 
-#Knowing data
-View(df)
-str(df)
+set.seed(100)
 
-seedf <- function (dataf) {
-  View(dataf)
-  str(dataf)
-}
-
-#Tratamento
-#exclusão de colunas
-df$X <- NULL
-df$price_reference <- NULL
-seedf(df)
-
-#renomear campos
-?names
-names(df)
-names(df) <- c("Marca", "Carro", "Ano_Modelo", "Combustivel", "Preço")
-names(df)
-seedf(df)
-
-?summary
-summary(df$Ano_Modelo)
-df$Ano_Modelo[df$Ano_Modelo==320000] <- "Zero Km"
-df$Ano_Modelo <- as.factor(df$Ano_Modelo)
-summary(df$Ano_Modelo)
-
-summary(df$Ano_Modelo)
-str(df$Ano_Modelo)
-
-summary(df$Preço)
-df$Preço1 <- as.numeric(df$Preço)
-summary(df$Preço1)
-df$Preço1 <- NULL
-
-?gsub
-df$Preço1 <- gsub("R\\$|\\.| ", "",df$Preço)
-df$Preço1 <- NULL
-df$Preço <- gsub("R\\$|\\.| ", "",df$Preço)
-
-summary(df$Preço)
-df$Preço <- as.numeric(gsub("\\.",".",df$Preço))
-summary(df$Preço)
-
-str(df$Preço)
-
+# Separar dados de treino e teste de maneira randômica
+linhas <- sample(1:length(df$brand),length(df$brand)*0.7)
+# Dados de Treino - 70%
+treino = df[linhas,]
+# Dados de teste - 30%
+teste = df[-linhas,]
+# Criar o Modelo
+library(rpart)
+#View(df)
+modelo <- rpart(price ~ .,data = treino,control = rpart.control(cp = 0))
+# realizar previsões
+teste$Previsão <- predict(modelo,teste)
+View(teste)
+# analizar resultados
 
 ##
 ###
