@@ -14,11 +14,13 @@
 ########### - Machine Learning
 ###
 ## -- Tratamento do dataset
-path <- "C:\\Users\\herna\\OneDrive\\Github\\Learning\\ABC-I\\R\\csv"
+path <- "E:\\Github\\Learning\\ABC-I\\R\\csv"
 file <- "fipe_Jun2018.csv"
 
 setwd(path)
-df <- read.csv(file)
+df <- read.csv(file) 
+df <- read.csv(file,header=TRUE,encoding="UTF-8")
+#base de Dados
 
 #Knowing data
 View(df)
