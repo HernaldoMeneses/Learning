@@ -1,10 +1,10 @@
 ########### - Guia Inicial.
 #
-# - Objetivo: Primeiro contato com a linguagem R e O RStudio
+# - Objetivo: Aplicar Machine Leaning no R
 # - Obs     : Sem Exaurimento.
 #
-# - Titulo  : Organizacao dos dados pela linguagem.
-# - Tema    : Organizacao dos dados pela linguagem.
+# - Titulo  : Machine Leaning com R.
+# - Tema    : uma breve visualização.
 #
 # - Autor   : Hernaldo Meneses 
 # - Criação : Data de criação do script
