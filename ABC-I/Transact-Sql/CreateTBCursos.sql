@@ -16,8 +16,10 @@ GO
 CREATE TABLE [dbo].[Cursos](
 	[id_curso] [int] NOT NULL,
 	[nome_curso] [varchar](200) NOT NULL,
-	[data_cadastro] [datetime] NOT NULL,
+	[data_cadastro] [date] NOT NULL,
 	[login_cadastro] [varchar](15) NOT NULL,
+	[data_alteracao] [date](15) NULL,
+	[login_alteracao] [varchar](15) NULL,
 PRIMARY KEY CLUSTERED 
 (
 	[id_curso] ASC
