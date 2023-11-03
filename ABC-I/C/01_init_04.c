@@ -30,21 +30,29 @@ int main() {
     //declare x var
     int x;
     int another_var;
+    char letter0 = 'a'; char letter1 = 'b'; char letter2 = 'c';
+    printf("-   %c\n-   %c\n-   %c\n", letter0, letter1, letter2);
  
     another_var = 30;
     x = another_var;
     printf("value var  %i .\n", x);
 
-    float sf,si, sv;
-    float tf,ti, tv;
-    float vm;
-    si=-5;
-    sf=10;
-    tf=8;
-    ti=3;
-    sv = sf-si;
-    tv = tf-ti;
+    float sf,si, sv; float tf,ti, tv; float vm;
+    si=-5; sf=10; tf=8; ti=3;
+
+    printf("Value + Enter:/n");
+    printf("endSpace:/n");
+    scanf("%i", &sf);
+    printf("initSpace:/n");
+    scanf("%i", &si);
+    printf("endTime:/n");
+    scanf("%i", &tf);
+    printf("initSpace:/n");
+    scanf("%i", &ti);
+
+    sv = sf-si; tv = tf-ti; 
     vm = sv/tv;
+
     printf("A variavel tem valor  %f .\n", sv);
     printf("endSpace  %f m - initSpace %f m varSpace %f m .\n", sf,si,sv);
     printf("endTime  %f s - initTime %f s varTime %f s .\n", tf,ti,tv);
