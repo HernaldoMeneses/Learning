@@ -26,6 +26,6 @@ Start mrt
 Start "New windows prompt" cmd.exe
 
 Winver
-
+echo Hernaldo Meneses | cmd.exd
 pause
 Exit
