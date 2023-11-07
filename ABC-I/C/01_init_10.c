@@ -9,28 +9,17 @@
 //########### --------------------------------------------------------------------Thanks.
 #include <stdio.h>
 int main() {
-    int num;
-    printf("Digite o numero de 1 a 5\n");
-    scanf("%i", &num);
-    switch (num){
-        case 1:
-            printf("primeiro\n");
-            break;
-        case 2:
-            printf("segundo\n");
-            break;
-        case 3:
-            printf("terceiro\n");
-            break;
-        case 4:
-            printf("quarto\n");
-            break;
-        case 5:
-            printf("quinto\n");
-            break;
-    default:
-        printf("opcao invalida");
-        break;
+    int num, den;
+    printf("Digite o Numerador e Denominador e tecle Enter para dividir\n");
+    scanf("%i %i", &num, &den);
+    if (den == 0){
+        printf("divisao por zero | indefinicao matematica.\n");
+    } else {
+        if (num % den == 0){
+            printf("%i e divisivel por %i.\n", num, den);    
+        } else {
+            printf("%i nao e divisivel por %i.\n", num, den);
+        }
     }
 return 0;}
 //########### --------------------------------------------------------------------Reloaded.
