@@ -3,6 +3,7 @@ Echo
 Echo on
 Echo off
 Echo Hernaldo Meneses | clip
+pause
 Vol
 Ver
 Clip
@@ -10,9 +11,12 @@ Date
 Time
 Start notepad
 Start www.googl.com
+Start "" www.googl.com
 Start mrt
 Start "New windows prompt" cmd.exe
 Winver
-echo Hernaldo Meneses | cmd.exd
+for /f "delims=" %%a in ('echo LineByLine') do set title=%%a
+start "%title%" cmd
+cd/
 pause
 Exit
