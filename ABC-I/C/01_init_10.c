@@ -21,6 +21,32 @@ int main() {
             printf("%i nao e divisivel por %i.\n", num, den);
         }
     }
+    
+    int cifra;
+    printf("Digite um numero para printar sua escrita oposta\n");
+    scanf("%i", &num);
+    if (num >= 0) {
+        do {
+            cifra = num % 10;
+            printf("%i", cifra);
+            num /= 10;
+        } while (num !=0);
+        printf("\n");
+    } else {
+        printf("-");
+        num *= -1;
+        do {
+            cifra = num % 10;
+            printf("%i", cifra);
+            num /= 10;
+        } while (num !=0);
+    }
+
+    num = -9;
+    num > 0 ? printf("sim - proposition true\n") : printf("false\n")
+
+
+
 return 0;}
 //########### --------------------------------------------------------------------Reloaded.
 //########### - Compile_By.
