@@ -43,7 +43,7 @@ int main() {
     }
 
     num = -9;
-    num > 0 ? printf("sim - proposition true\n") : printf("false\n")
+    num > 0 ? printf("sim - proposition true\n") : printf("false\n");
 
 
 
