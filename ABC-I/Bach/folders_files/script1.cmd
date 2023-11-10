@@ -4,7 +4,8 @@ cd .. & pause
 dir & pause
 cd folders_files & pause
 dir & pause
-echo tx > txt.txt
+echo tx > txt.txt & pause
+type txt.txt & pause
 dir & pause
 set p=%cd% & pause
 echo "%p%"
