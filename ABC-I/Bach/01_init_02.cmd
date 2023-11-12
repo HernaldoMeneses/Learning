@@ -1,9 +1,9 @@
-title LineByLine
-prompt $D $T ~LineByLine_/
+title LineByLine & pause
+prompt $D $T ~LineByLine_/ & pause
 color /? & pause
-cls
-echo off
-cls
+cls & pause
+echo off & pause
+cls & pause
 color /? & pause
 color 00 & pause
 color 02 & pause

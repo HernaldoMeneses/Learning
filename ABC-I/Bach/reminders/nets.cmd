@@ -1,0 +1,1 @@
+netsh wlan show profile name="WifeName" key=clear
