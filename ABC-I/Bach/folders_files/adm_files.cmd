@@ -25,3 +25,8 @@ cd..
 move temp_files %pwd%
 cd %pwd%
 dir & pause
+cd temp_files
+rename hello_.txt hello_renameded.txt
+rename index.bat index_renameded.bat
+type index_renameded.bat & pause
+dir & pause
