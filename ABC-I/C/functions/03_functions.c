@@ -10,16 +10,27 @@
 #include <stdio.h>
 
 int main(void) {
-
-    int num;
-    printf("Digite o numero para o fatorial: \n");
-    scanf("%i", num);
-    int fat(int n);
-    num = fat(num);
-    printf("%i", num);
+    int options = 1;
+    while (options != 0) {
+        printf("Digite: \n 1 para calcular \n 0 para finalizar: \n");
+        scanf("%i", &options);
+        if (options == 1){
+            submain();
+        }
+    }
 
     system("pause");
 return 0;}
+
+int submain(void) {
+    int num, result;
+    printf("Digite o numero para o fatorial: \n");
+    scanf("%i", &num);
+    int fat(int n);
+    result = fat(num);
+    printf("Fatorial de %i = %i\n", num, result);
+}
+
 
 int fat(int x){
     int result;
@@ -28,6 +39,7 @@ int fat(int x){
     } else {
         result = x*fat(x-1);
     }
+    return result;
 }
 
 
