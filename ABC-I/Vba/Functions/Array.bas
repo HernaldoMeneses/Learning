@@ -22,7 +22,7 @@ For i = 0 To 6
 Next
 MsgBox sms
 
-IsArray(Dias)
-IsArray(sms)
+MsgBox IsArray(Dias)
+MsgBox IsArray(sms)
 '
 End Sub
