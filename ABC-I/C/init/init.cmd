@@ -1,7 +1,7 @@
 @echo off
 
-set directory="functions"
-set Script="05_functions.c"
+set directory="structures"
+set Script="01_structure.c"
 
 :functios_
 cd .. & cd "%directory%" & dir & pause
