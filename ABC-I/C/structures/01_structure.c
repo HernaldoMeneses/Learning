@@ -8,7 +8,6 @@
 //# - Infrastrutura de compilação e informações ao final do Script.
 //########### --------------------------------------------------------------------Thanks.
 #include <stdio.h>
-
 int main(void) {
 
     struct time {
