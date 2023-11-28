@@ -13,20 +13,20 @@ int main(void) {
     int b = 10;
     double c = 100.12356789;
 
-    printf("Var inter impress digits            (%%d) = %d\n", a);
-    printf("Var inter impress digits            (%%d) = %d\n", a);
-    printf("Var inter impress integer           (%%i) = %i\n", a);
-    printf("Var inter impress in exdecimal      (%%x) = %x\n", a);
-    printf("Var inter impress in octadecimal    (%%o) = %o\n", a);
+    printf("Var inter impress digits            (%%d)   = %d\n",    a);
+    printf("Var inter impress digits            (%%d)   = %d\n",    a);
+    printf("Var inter impress integer           (%%i)   = %i\n",    a);
+    printf("Var inter impress in exdecimal      (%%x)   = %x\n",    a);
+    printf("Var inter impress in octadecimal    (%%o)   = %o\n",    a);
     printf("\n");
-    printf("Var inter impress digits            (%%d) = %20d\n", a);
+    printf("Var inter impress digits            (%%d)   = %20d\n",  a);
     printf("\n");
-    printf("Var inter impress   (%%f) = %f\n", c);
-    printf("Var inter impress   (%%.3f) = %.3f\n", c);
-    printf("Var inter impress   (%%.2f) = %.2f\n", c);
-    printf("Var inter impress   (%%e) = %e\n", c);
-    printf("Var inter impress   (%%g) = %g\n", c);
-    printf("Var inter impress   (%%a) = %a\n", c);
+    printf("Var inter impress                   (%%f)   = %f\n",    c);
+    printf("Var inter impress                   (%%.3f) = %.3f\n",  c);
+    printf("Var inter impress                   (%%.2f) = %.2f\n",  c);
+    printf("Var inter impress                   (%%e)   = %e\n",    c);
+    printf("Var inter impress                   (%%g)   = %g\n",    c);
+    printf("Var inter impress                   (%%a)   = %a\n",    c);
     printf("\n");
 
     system("echo Welcome!");
