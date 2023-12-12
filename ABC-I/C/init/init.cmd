@@ -1,7 +1,7 @@
 @echo off
 
 set directory="structures"
-set Script="02_structure.c"
+set Script="03_structure.c"
 
 rem set directory="var"
 rem set Script="casting.c"
