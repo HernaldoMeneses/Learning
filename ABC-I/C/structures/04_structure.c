@@ -8,27 +8,49 @@
 //# - Infrastrutura de compilação e informações ao final do Script.
 //########### --------------------------------------------------------------------Thanks.
 #include <stdio.h>
-
+    //Global
     struct time {
-        int h;
-        int m;
-        int s;
+        int h; int m; int s;
     };
 
 int main(void) {
-   struct time f[1];
 
-   f[0].h = 6;
-   f[0].m = 17;
-   f[0].s = 25;
+   struct time f[3] = { //Vector; type sctruct time ; 3 positions ; defined
+        {6,17,25},
+        {3,8,12},
+        {2,4,6}
+    };
 
-   printf("\n - Time : %i:%i:%i\n", f[0].h, f[0].m, f[0].s);
+    struct time f2[3];
+
+    void sca(struct time x[]);
+    void sms(struct time x[]);
+
+    sca(f2);
+    sms(f2);
+    printf("\n - Just ...");
+    sms(f);
 
     system("pause");
 return 0;
 }
 
+void sca(struct time x[]){
+    int i;
+    for (i=0; i<3; i++){
+        printf("Please, input time %i type(hh:mm:ss): ", i+1);
+        scanf("%i:%i:%i", 
+            &x[i].h, &x[i].m, &x[i].s);
+    } 
+};
 
+void sms(struct time x[]){
+    int i;
+    for (i=0; i<3; i++){
+        printf("\n %i - Time : %i:%i:%i\n", 
+            i, x[i].h, x[i].m, x[i].s);
+    } 
+};
 
 //########### --------------------------------------------------------------------Reloaded.
 //########### - Compile_By.
