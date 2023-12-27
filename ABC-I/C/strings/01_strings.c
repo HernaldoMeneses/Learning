@@ -27,21 +27,6 @@ void vector_show(char x[], int i_length) {
     printf("\n");
 }
 
-//Hi...
-int main(void) {
-    char var_string[] = {'A','B','.','Z'};
-    char var_string_[] = "Matrix_Reloaded";
-
-
-    void fx (char x[]);
-    fx(var_string);
-    fx(var_string_);
-
-
-    system("pause");
-return 0;
-}
-
 void fx (char x[]) {
     int i_length = 0;
     i_length = stgleng(x);
@@ -50,7 +35,38 @@ void fx (char x[]) {
     return;
 }
 
+//Hi...
+int main(void) {
+    char var_string[] = {'A','B','.','Z'};
+    char var_string_[] = "Matrix_Reloaded";
 
+    void fx (char x[]);
+    fx(var_string);
+    fx(var_string_);
+
+    void concat(char x[], int x1, char y[], int y1);
+    int x_ = stgleng(var_string);
+    int y_ = stgleng(var_string_);
+    concat(var_string, x_, var_string_, y_);
+
+    system("pause");
+return 0;
+}
+
+void concat(char x[], int x1, char y[], int y1){
+    int i,j,xx,yy;
+    xx = x1;
+    yy = y1;
+    char var_string_c[xx+yy];
+    for (i=0; i < xx; i++){
+        var_string_c[i] = x[i];
+    }
+    for (j=0; j < yy; j++){
+        var_string_c[xx+j] = y[j];
+    }
+    void fx (char x[]);
+    fx(var_string_c);
+}
 
 //########### ----------------------------------------------------Reloaded.
 //########### - Compile_By.
