@@ -9,14 +9,14 @@
 //########### ------------------------------------------------------Thanks.
 #include <stdio.h>
 
-int main(void) {
-    int i_length = 0;
-    char var_string[] = {'A','B','.','Z'};
-    i_length = stgleng(var_string);
-    void vector_show(char x[], int i_length);
-    vector_show(var_string, i_length);
-    system("pause");
-return 0;}
+int stgleng(char x[]){
+    int len = 0;
+    while (x[len] != '\0'){
+        len++;
+    }
+    return len;
+}
+
 
 void vector_show(char x[], int i_length) {
     int i;
@@ -24,14 +24,33 @@ void vector_show(char x[], int i_length) {
     for (i = 0; i< i_length_f; ++i) {
         printf("%c", x[i]);
     }
-    printf("\n");}
+    printf("\n");
+}
 
-int stgleng(char x[]){
-    int len = 0;
-    while (x[len] != '\0'){
-        len++;
-    }
-    return len;}
+//Hi...
+int main(void) {
+    char var_string[] = {'A','B','.','Z'};
+    char var_string_[] = "Matrix_Reloaded";
+
+
+    void fx (char x[]);
+    fx(var_string);
+    fx(var_string_);
+
+
+    system("pause");
+return 0;
+}
+
+void fx (char x[]) {
+    int i_length = 0;
+    i_length = stgleng(x);
+    void vector_show(char x[], int i_length);
+    vector_show(x, i_length);
+    return;
+}
+
+
 
 //########### ----------------------------------------------------Reloaded.
 //########### - Compile_By.
