@@ -11,22 +11,25 @@
 
 //Hi...
 int main(void) {
-    char var_s0[4] = {'A','B','.','Z'};
-    char var_s1[] = {'A','B','.','Z'};
-    char var_s2[5] = {"AB.Z"}; //because \0 mark end.
-    char var_s3[] = {"AB.Z"}; 
-    char var_s4[] = "Matrix_Reloaded";
+    int max = 20; //need to declare
+    int lengthString(char string[]);
+    char UserName[max];
 
-    printf("_] s0 - %s \n", var_s0); // %s because string to print chars without for
-    printf("_] s1 - %s \n", var_s1);
-    printf("_] s2 - %s \n", var_s2);
-    printf("_] s3 - %s \n", var_s3);
-    printf("_] s4 - %s \n", var_s4);
+    printf("What's you frist name? \n");
+    scanf("%s", UserName);// no space 
+    printf("length name: %i \n", lengthString(UserName));
 
     system("pause");
 return 0;
 }
 
+int lengthString(char string[]){
+    int len = 0;
+    while (string[len] != '\0'){
+        len++;
+    }
+    return len;
+}
 
 
 //########### ----------------------------------------------------Reloaded.
