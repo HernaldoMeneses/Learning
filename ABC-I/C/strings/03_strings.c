@@ -31,6 +31,9 @@ int lengthString(char string[]){
     return len;
 }
 
+//cont. aula 50 
+//https://www.youtube.com/watch?v=BX6wPwvEMm8
+
 
 //########### ----------------------------------------------------Reloaded.
 //########### - Compile_By.
